@@ -26,8 +26,7 @@ int main()
 	cout<<"Hieu = "<<hieu(a,b)<<endl;
 	cout<<"Tich = " << tich(a, b) << endl;
 	cout<<endl;
-	cout<<"Tam2";
-	cout<<"Tam3";
+	cout<<"ViDu2";
 
 	system("pause");
 	return 0;
