@@ -2,32 +2,41 @@
 
 using namespace std;
 
-int tong(int a, int b){
-	return a+b;
+int tong(int a, int b) {
+    return a + b;
 }
 
-int hieu(int a, int b){
-	return(a-b);
-}
-int tich(int a, int b){
-	return a*b;
+int hieu(int a, int b) {
+    return a - b;
 }
 
-float thuong(int a, int b);
-int main()
-{
-	int a, int b;
-	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT";
-	cout<<"Nhap a: ";
-	cin>>a;
-	cout<<"Nhap b: ";
-	cin>>b;
-	cout<<"Tong = "<<tong(a,b)<<endl;
-	cout<<"Hieu = "<<hieu(a,b)<<endl;
-	cout<<"Tich = " << tich(a, b) << endl;
-	cout<<endl;
-	cout<<"ViDu2";
+int tich(int a, int b) {
+    return a * b;
+}
 
-	system("pause");
-	return 0;
+float thuong(int a, int b) {
+    if (b != 0)
+        return (float)a / b;
+    else {
+        cout << "Loi: Mau bang 0!" << endl;
+        return 0;
+    }
+}
+
+int main() {
+    int a, b;
+    cout << "DAY LA CHUONG TRINH DE THUC HANH GIT\n";
+    cout << "Nhap a: ";
+    cin >> a;
+    cout << "Nhap b: ";
+    cin >> b;
+
+    cout << "Tong = " << tong(a, b) << endl;
+    cout << "Hieu = " << hieu(a, b) << endl;
+    cout << "Tich = " << tich(a, b) << endl;
+    cout << "Thuong = " << thuong(a, b) << endl;
+    cout << "BT2";
+
+    system("pause");
+    return 0;
 }
